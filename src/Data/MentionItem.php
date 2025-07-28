@@ -4,7 +4,7 @@ namespace FilamentTiptapEditor\Data;
 
 class MentionItem
 {
-    public int $id;
+    public int | string $id;
 
     public string $label;
 
@@ -21,7 +21,7 @@ class MentionItem
     public array $data = [];
 
     public function __construct(
-        int $id,
+        int | string $id,
         string $label,
         ?string $type = null,
         ?string $href = null,
